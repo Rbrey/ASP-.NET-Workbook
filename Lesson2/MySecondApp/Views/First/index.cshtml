@@ -1,18 +1,30 @@
 ﻿@model MySecondApp.Models.MyModel
 @{
-    Layout = "_Layout";
+    Layout = "_MyLayout";
 }
 
 <h2>Hello World!</h2>
 <div>
     @if (DateTime.Now.Hour >= 12)
     {
-        <p>Good Evening it is @Model.CurrentTime. @Model.mySurname, @Model.myFirstName. Your lucky number is, @Model.luckyNum.</p>
+        <p>Good Evening it is @Model.CurrentTime. Your lucky number is, @Model.luckyNum.</p>
     }
     else
     {
         <p>Good Morning, @Model.mySurname, @Model.myFirstName. Your lucky number is, @Model.luckyNum</p>
     }
+</div>
+<div>
+    <h1>Who I am</h1>
+    <p>My name is @Model.mySurname, @Model.myFirstName and I am an aspiring game developer.</p>
+</div>
+<div>
+    <h1>Why I am here</h1>
+    <p>I am taking these courses so I can better understand the fundementals of web development, and programming in general.</p>
+</div>
+<div>
+    <h1>Where I plan to be in 5 years</h1>
+    <p>I plan on releasing my first game in 5 years called 'Sagas of Caradra'. An rpg made in RPG Maker MV</p>
 </div>
 <div style="border: solid 1px black;">
     <p>My name is Robert, I'm new to this and trying to become a better programmer so I can start my own game dev studio. Have a great day!</p>
